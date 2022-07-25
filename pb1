@@ -1,0 +1,11 @@
+// 1. Given an array of objects that have a field 
+// called population, sort the objects by population 
+// size. Return the sorted array.
+
+const population = [30000, 500000, 60000,40000, 1000000];
+const compare = (a, b) => a > b ? 1 : 0;
+population.sort(function(a,b){
+  return a-b;
+});
+ console.log(population);
+
